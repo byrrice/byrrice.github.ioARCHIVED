@@ -1,0 +1,127 @@
+<!--https://www.mockplus.com/blog/post/portfolio-design-websites-->
+<!--https://pages.github.com/ for all your website needs-->
+<!-- Isaac's example portfolio website -->
+<!--look at Girik's for portfolio inspiration-->
+<!--Change Font Type-->
+<!DOCTYPE html>
+<html lang="en-US"></html>
+<head>
+  <style>
+    a:link {
+      color: burlywood; 
+      background-color: transparent; 
+      text-decoration: none;
+    }
+
+    a:visited {
+        color: plum;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: violet;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: lightcoral;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    /*font is roboto, background cat is  black cat*/
+    body{
+      font-family: 'Roboto Slab', sans-serif;
+      background-color:#413839;
+    }
+    /*creating the list bullets for the links table horizontal*/
+    #centeredmenu {
+      float:left;
+      width:100%;
+      border-bottom:4px solid #000;
+      overflow:hidden;
+      position:relative;
+    }
+    #centeredmenu ul {
+      clear:left;
+      float:left;
+      list-style:none;
+      margin:0;
+      padding:0;
+      position:relative;
+      left:50%;
+      text-align:center;
+    }
+    #centeredmenu ul li {
+      display:block;
+      float:left;
+      list-style:none;
+      margin:0;
+      padding:0;
+      position:relative;
+      right:50%;
+    }
+    #centeredmenu ul li a {
+      display:block;
+      margin:0 0 0 1px;
+      padding:3px 10px;
+      text-decoration:none;
+      line-height:1.3em;
+    }
+    #centeredmenu ul li a:hover {
+      background:#369;
+    }
+    #centeredmenu ul li a.active,
+    #centeredmenu ul li a.active:hover {
+      background:#000;
+      font-weight:bold;
+    }
+  </style>
+    <title>Isaac's Portfolio</title>
+    <meta charset = "UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+</head>
+<!--https://stackoverflow.com/questions/18178867/how-can-i-use-googles-roboto-font-on-a-website-->
+<!--can use roboto slab or roboto, user preference-->
+<!--<body style="font-family: 'Roboto Slab', sans-serif; background-color:#413839;">-->
+<h1 style="text-align:center;">Isaac Ng</h1>
+<center><img src="isaac.jpg" alt="Isaac's Picture" width="100" height="100"></center>
+<!--think about combining all of them into one picture and producing picture map, make list-->
+<div id="centeredmenu">
+    <ul>
+      <li><h2 style="text-align:center; font-size:14px;">GitHub</h2>
+        <a href = "https://github.com/byrrice" target = "_blank">
+          <img src = "github.png" alt = "github" style = "width:60px;height:60;">
+        </a>
+      </li>
+      <li><h2 style="text-align:center; font-size:14px;">LinkedIn</h2>
+        <a href = "https://www.linkedin.com/in/isaacng97/" target = "_blank">
+          <img src = "linkedin.png" alt = "linkedin" style = "width:60px;height:60;">
+        </a>
+      </li>
+    </ul>
+ </div>
+  
+<hr>
+<h2>Who am I?</h2>
+<div>I am a Comp Sci Major at Case Western.</div>
+<p>I code and make various things via code.</p>
+<h2>Courses Taken:</h2>
+<ul>
+  <li>Data Structures</li>  
+  <li>Programming Language Concepts</li> 
+  <li>Algorithms</li> 
+  <li>Intro to Operating Systems</li> 
+  <li>Probabilistic Graphical Models</li> 
+</ul>
+<hr>
+
+<h2>Contact Info</h2>
+<!--stickpng.com is the most useful site-->
+<p><img src = "email.png" alt = "email" style = "width:20px;height:20;"> isaacng97@yahoo.com</p>
+<hr>
+<p  style = "padding: 20px; background-color:lightcoral; border:2px solid Violet;">haha</p>
+</body>
+
+</html>
