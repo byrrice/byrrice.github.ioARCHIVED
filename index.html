@@ -1,6 +1,7 @@
-<!--https://www.mockplus.com/blog/post/portfolio-design-websites-->
+<!--https://www.mockplus.com/blog/post/portfolio-design-websites to look at nice websites for inspiration-->
 <!-- http://gordonkoo.com/ to remind me to add humor-->
 <!--https://pages.github.com/ for all your website needs-->
+<!-- Consider updating cursor -->
 <!-- Isaac's example portfolio website -->
 <!--look at Girik's for portfolio inspiration-->
 <!--For Centered Menu: https://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support-->
@@ -34,8 +35,10 @@
     /*font is roboto, background cat is  black cat*/
     body{
       font-family: 'Roboto Slab', sans-serif;
-      background-color:#F3F3F1;
-      color: #7E7E7C;
+      /*#F3F3F1*/
+      background-color:#212121; 
+      /* rgb(73, 72, 72)*/
+      color: rgb(139, 136, 136);
     }
     /*creating the list bullets for the links table horizontal*/
     #centeredmenu {
@@ -89,31 +92,18 @@
 <!--https://stackoverflow.com/questions/18178867/how-can-i-use-googles-roboto-font-on-a-website-->
 <!--can use roboto slab or roboto, user preference-->
 <!--<body style="font-family: 'Roboto Slab', sans-serif; background-color:#413839;">-->
-<h1 style="text-align:center; font-size:36px;">Isaac Ng</h1>
+
+<!-- who am i in 3-5 sentences - learning, etc, then have my image with couple of bubbles next to me -->
+<h1 style="text-align:center; font-size:36px; color: rgb(221, 221, 221)">Isaac Ng</h1>
 <center><img src="isaac.jpg" alt="Isaac's Picture" style = "border-radius:50%; width: 100; height: 100"></center>
 <center><div>Learning aficionado; Jack of many trades, Master of some.</div></center>
-<!--think about combining all of them into one picture and producing picture map, make list-->
-<div id="centeredmenu">
-    <ul>
-      <li><h2 style="text-align:center; font-size:14px;">GitHub</h2>
-        <a href = "https://github.com/byrrice" target = "_blank">
-          <img src = "github.png" alt = "github" style = "width:60px;height:60;">
-        </a>
-      </li>
-      <li><h2 style="text-align:center; font-size:14px;">LinkedIn</h2>
-        <a href = "https://www.linkedin.com/in/isaacng97/" target = "_blank">
-          <img src = "linkedin.png" alt = "linkedin" style = "width:60px;height:60;">
-        </a>
-      </li>
-    </ul>
- </div>
   
 <hr>
-<h2>My Story:</h2>
+<h2 style = "color:rgb(221, 221, 221);">My Story:</h2>
 <div>Coder, Video Editer, Music Maker, all purpose "Noun Verb-er". If it's interesting, I'll learn it (via Googling of course) and work on it. </div>
 <div>I am fluent in HTML, CSS, JavaScript, Markdown/Latex, Python, Java, and C#. I am knowledgeable about Haskell, Scheme, Prolog, C++, and MatLab. </div> 
 <div>In terms of operating systems, I have worked extensively with Linux, Mac, and Windows. I have also utilized Agile Methodologies during my time working.</div>
-<h2>Courses Taken:</h2>
+<h2 style = "color:rgb(221, 221, 221);">Courses Taken:</h2>
 <ul>
   <li>Data Structures</li>  
   <li>Programming Language Concepts (Functional and OOP)</li> 
@@ -124,9 +114,24 @@
 </ul>
 <hr>
 
-<h2>Contact Info</h2>
+<h2 style = "color:rgb(221, 221, 221);">Contact Info</h2>
 <!--stickpng.com is the most useful site-->
 <p><img src = "email.png" alt = "email" style = "width:20px;height:20;"> isaacng97@yahoo.com</p>
+<!--think about combining all of them into one picture and producing picture map, make list-->
+<div id="centeredmenu">
+  <ul>
+    <li>
+      <a href = "https://github.com/byrrice" target = "_blank">
+        <img src = "github.png" alt = "github" style = "width:60px;height:60; border-radius:50%;">
+      </a>
+    </li>
+    <li>
+      <a href = "https://www.linkedin.com/in/isaacng97/" target = "_blank">
+        <img src = "linkedin.png" alt = "linkedin" style = "width:60px;height:60;border-radius:50%;">
+      </a>
+    </li>
+  </ul>
+</div>
 <hr>
 <p  style = "padding: 20px; background-color:lightcoral; border:2px solid Violet;">haha</p>
 </body>
