@@ -1,0 +1,264 @@
+
+
+<!-- Isaac's example portfolio website -->
+<!--https://www.mockplus.com/blog/post/portfolio-design-websites to look at nice websites for inspiration-->
+<!-- http://gordonkoo.com/ to remind me to add humor-->
+<!--https://pages.github.com/ for all your website needs-->
+<!-- fontawesome please-->
+<!-- Consider updating cursor -->
+<!--For Centered Menu: https://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support-->
+<!-- set icon for webpage -->
+<!DOCTYPE html>
+<html lang="en-US"></html>
+<head>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- google icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- imported devicons -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    a:link {
+      color: rgb(222, 184, 135); 
+      background-color: transparent; 
+      text-decoration: none;
+    }
+
+    a:visited {
+        color:  rgb(226, 171, 99);
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color:  lightcoral;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+
+    a:active {
+        color: rgb(240, 160, 128);
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    /*font is roboto, background cat is  black cat*/
+    body{
+      font-family: 'Roboto Slab', sans-serif;
+      /*#F3F3F1*/
+      background-color:#212121; 
+      /* rgb(73, 72, 72)*/
+      color: rgb(139, 136, 136);
+    }
+    /*creating the list bullets for the links table horizontal*/
+    #centeredmenu {
+      float:left;
+      width:100%;
+      border-bottom:4px solid #000;
+      overflow:hidden;
+      position:relative;
+    }
+    #centeredmenu ul {
+      clear:left;
+      float:left;
+      list-style:none;
+      margin:0;
+      padding:0;
+      position:relative;
+      left:50%;
+      text-align:center;
+    }
+    #centeredmenu ul li {
+      display:block;
+      float:left;
+      list-style:none;
+      margin:0;
+      padding:0;
+      position:relative;
+      right:50%;
+    }
+    #centeredmenu ul li a {
+      display:block;
+      margin:0 0 0 1px;
+      padding:3px 10px;
+      text-decoration:none;
+      line-height:1.3em;
+    }
+    #centeredmenu ul li a:hover {
+      color: violet;
+      background-color: transparent;
+    }
+    #centeredmenu ul li a.active,
+    #centeredmenu ul li a.active:hover {
+      color: lightcoral;
+      background-color: transparent;;
+      font-weight:bold;
+    }
+  </style>
+    <title>Isaac and his Website</title>
+    <meta charset = "UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+
+</head>
+
+
+<!--https://stackoverflow.com/questions/18178867/how-can-i-use-googles-roboto-font-on-a-website-->
+<!--can use roboto slab or roboto, user preference-->
+<!--<body style="font-family: 'Roboto Slab', sans-serif; background-color:#413839;">-->
+<h1 style="text-align:center; font-size:36px; color: rgb(221, 221, 221)">Isaac Ng</h1>
+
+<div>
+  <center>
+      <img src="isaac.jpg" alt="Isaac's Picture" style = " 
+        border:5px solid rgb(139, 136, 136);    
+        height:75px;
+        border-radius:50%;
+        -moz-border-radius:50%;
+        -webkit-border-radius:50%;
+        width:75px;">
+  </center>
+</div>
+<div>
+  <center>
+  <!-- change to nice orange color and fa icons-->
+  <a href = "https://github.com/byrrice" target = "_blank">
+    <i class="fa fa-github" style="font-size: 1.61em; margin: 5px 5px"></i>
+    <!-- <img src = "github.png" alt = "github" style = 
+    "border:3.105px solid rgb(139, 136, 136);    
+    height:62px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:62px;"> -->
+  </a>
+  <a href = "https://www.linkedin.com/in/isaacng97/" target = "_blank">
+    <i class="fa fa-linkedin" style="font-size: 1.61em; margin: 5px 5px"></i>
+    <!-- <img src = "linkedin.png" alt = "linkedin" style = 
+    "border:1.5px solid rgb(139, 136, 136);    
+    height:39px;
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    width:39px;"> -->
+  </a>
+  <a href = "https://byrriceblog.wordpress.com/" target = "_blank">
+    <i class="fa fa-wordpress" style="font-size: 1.61em; margin: 5px 5px"></i>
+  </a>
+</center>
+</div>
+  
+
+
+<!-- make this scrolling later on-->
+<!-- started coding as an obligation and it turned into love, who knew -->
+<center><div>Who are you? (1 sentence): General All Purpose Tinkerer <i class = "fa fa-wrench"></i></div></center>
+  
+<hr>
+<h2 style = "color:rgb(221, 221, 221);">Jack of Many Trades, Master of Some:</h2>
+<!-- jack of many trades, master of some-->
+<div>
+  <p>I am fluent in HTML, CSS, JavaScript, Markdown/Latex, Python, Java, and C#. I am knowledgeable about Haskell, Scheme, Prolog, C++, and MatLab. <br>
+    In terms of operating systems, I have worked extensively with Linux, Mac, and Windows. I have also utilized Agile Methodologies during my time working.<br>
+    I have two Carnegie Hall Royal Conservatory Level 10 Certificates (Violin and Oboe). I played varsity tennis and went to State. I am an Eagle Scout.
+  </p>
+</div>
+
+<hr>
+<h2 style = "color:rgb(221, 221, 221);">:</h2>
+<div>
+    <p>
+    Back when I was a Biomedical Engineer, my first ever coding project was a very basic Matlab music player that I wrote with Heather Hoden. It looked exactly
+    like the music players that the very first programmers had ever created, meaning that we were stepping along the paths of greats. I would end up switching to 
+    Computer Science while Heather would switch to Physics (RIP HH's coding future).
+  </p>
+  <p>
+     In EECS 391, I wrote a 2x2 Rubik's Cube solver that found the fastest way to solve using both A star and beam search. If you need help solving a 2x2 Rubik's Cube, 
+      my program will gladly help you out. Anything more than that and my program will probably combust. 
+    </p>
+  <p>At HACKCWRU V, Sibi Sengottuvvel, Rahul Pokharna, Alexander Telich, and I collaborated to write a Chrome extension that would translate
+    various images to speech using the Google Vision API. Sleep deprivation and playing Fortnite prevented us from taking an actual picture together, 
+    but we did win the Maker Award as a nice consolation prize. 
+  </p>
+    <p>
+      I am now currently working on 2 projects. One is this website itself and the other is my 2D Dino Platformer game. 
+    </p>
+</div>
+
+<div>
+  <h2 style = "color:rgb(221, 221, 221);">What I Do:</h2>
+    <ul>
+        <li>Coder, video editer, music maker</li>
+      <li>Teamwork is dreamwork.</li>  
+      <li>Basketball/Tennis/Any sport with a net really.</li> 
+      <li>Videogame player, Videogame maker. </li> 
+    </ul>
+</div>
+
+<div>
+  <h2 style = "color:rgb(221, 221, 221);">(What I Want) To Do:</h2>
+    <ul>
+      <li>Learn (via Google).</li>  
+      <li>Lead (via groupwork).</li> 
+      <li>Laugh (via good jokes).</li> 
+    </ul>
+</div>
+
+<div>
+  <h2 style = "color:rgb(221, 221, 221);">Courses Taken:</h2>
+    <ul>
+      <li>Data Structures</li>  
+      <li>Programming Language Concepts (Functional and OOP)</li> 
+      <li>Algorithms</li> 
+      <li>Intro to Operating Systems</li> 
+      <li>Probabilistic Graphical Models</li> 
+      <li>Software Engineering</li>
+    </ul>
+  </div>
+
+<hr>
+<div>
+  <h2 style = "color:rgb(221, 221, 221);">General Info</h2>
+  <p><i class="fa fa-envelope-o"></i>   isaacng97@yahoo.com</p>
+  <p><i class="fa fa-file-pdf-o"></i> <a href = "Resume.pdf" target = "_blank">Resume</a></p>
+</div>
+<!-- think about combining all of them into one picture and producing picture map, make list
+<div id="centeredmenu">
+  <ul>
+    <li>
+      <a href = "https://github.com/byrrice" target = "_blank">
+        <img src = "github.png" alt = "github" style = "width:60px;height:60; border-radius:50%;">
+      </a>
+    </li>
+    <li>
+      <a href = "https://www.linkedin.com/in/isaacng97/" target = "_blank">
+        <img src = "linkedin.png" alt = "linkedin" style = "width:60px;height:60;border-radius:50%;">
+      </a>
+    </li>
+  </ul>
+</div>
+<hr>
+<p  style = "padding: 20px; background-color:lightcoral; border:2px solid Violet;">haha</p>
+-->
+</body>
+
+</html>
