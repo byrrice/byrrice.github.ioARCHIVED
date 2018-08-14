@@ -1,42 +1,13 @@
-<!-- Isaac's example portfolio website -->
-<!--https://www.mockplus.com/blog/post/portfolio-design-websites to look at nice websites for inspiration-->
-<!-- http://gordonkoo.com/ to remind me to add humor-->
-<!--https://pages.github.com/ for all your website needs-->
-<!-- fontawesome please-->
-<!-- Consider updating cursor -->
-<!--For Centered Menu: https://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support-->
-<!-- set icon for webpage -->
 <!DOCTYPE html>
-<html lang="en-US"></html>
-<head>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <!-- google icons-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- imported devicons -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <!--bootstrap-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!-- fontawesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+<style>
     a:link {
       color: rgb(222, 184, 135); 
       background-color: transparent; 
@@ -52,211 +23,326 @@
     a:hover {
         color:  lightcoral;
         background-color: transparent;
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     a:active {
         color: rgb(240, 160, 128);
         background-color: transparent;
-        text-decoration: underline;
+        text-decoration: none;
     }
-    /*font is roboto, background cat is  black cat*/
-    body{
+body, html {
       font-family: 'Roboto Slab', sans-serif;
       /*#F3F3F1*/
-      background-color:#212121; 
       /* rgb(73, 72, 72)*/
       color: rgb(139, 136, 136);
+      background-color: #363636;
+      line-height: 1.8;
+      height: 100%;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('rainy.gif');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("code.png");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("/w3images/parallax3.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
     }
-    /*creating the list bullets for the links table horizontal*/
-    #centeredmenu {
-      float:left;
-      width:100%;
-      border-bottom:4px solid #000;
-      overflow:hidden;
-      position:relative;
-    }
-    #centeredmenu ul {
-      clear:left;
-      float:left;
-      list-style:none;
-      margin:0;
-      padding:0;
-      position:relative;
-      left:50%;
-      text-align:center;
-    }
-    #centeredmenu ul li {
-      display:block;
-      float:left;
-      list-style:none;
-      margin:0;
-      padding:0;
-      position:relative;
-      right:50%;
-    }
-    #centeredmenu ul li a {
-      display:block;
-      margin:0 0 0 1px;
-      padding:3px 10px;
-      text-decoration:none;
-      line-height:1.3em;
-    }
-    #centeredmenu ul li a:hover {
-      color: violet;
-      background-color: transparent;
-    }
-    #centeredmenu ul li a.active,
-    #centeredmenu ul li a.active:hover {
-      color: lightcoral;
-      background-color: transparent;;
-      font-weight:bold;
-    }
-  </style>
-    <title>Isaac and his Website</title>
-    <meta charset = "UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+}
+</style>
+<body>
 
-</head>
-
-
-<!--https://stackoverflow.com/questions/18178867/how-can-i-use-googles-roboto-font-on-a-website-->
-<!--can use roboto slab or roboto, user preference-->
-<!--<body style="font-family: 'Roboto Slab', sans-serif; background-color:#413839;">-->
-<h1 style="text-align:center; font-size:36px; color: rgb(221, 221, 221)">Isaac Ng</h1>
-
-<div>
-  <center>
-      <img src="isaac.jpg" alt="Isaac's Picture" style = " 
-        border:5px solid rgb(139, 136, 136);    
-        height:75px;
-        border-radius:50%;
-        -moz-border-radius:50%;
-        -webkit-border-radius:50%;
-        width:75px;">
-  </center>
-</div>
-<div>
-  <center>
-  <!-- change to nice orange color and fa icons-->
-  <a href = "https://github.com/byrrice" target = "_blank">
-    <i class="fa fa-github" style="font-size: 1.61em; margin: 5px 5px"></i>
-    <!-- <img src = "github.png" alt = "github" style = 
-    "border:3.105px solid rgb(139, 136, 136);    
-    height:62px;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    width:62px;"> -->
-  </a>
-  <a href = "https://www.linkedin.com/in/isaacng97/" target = "_blank">
-    <i class="fa fa-linkedin" style="font-size: 1.61em; margin: 5px 5px"></i>
-    <!-- <img src = "linkedin.png" alt = "linkedin" style = 
-    "border:1.5px solid rgb(139, 136, 136);    
-    height:39px;
-    border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
-    width:39px;"> -->
-  </a>
-  <a href = "https://byrriceblog.wordpress.com/" target = "_blank">
-    <i class="fa fa-wordpress" style="font-size: 1.61em; margin: 5px 5px"></i>
-  </a>
-</center>
-</div>
-  
-
-
-<!-- make this scrolling later on-->
-<!-- started coding as an obligation and it turned into love, who knew -->
-<center><div>Who are you? (1 sentence): General All Purpose Tinkerer <i class = "fa fa-wrench"></i></div></center>
-  
-<hr>
-<h2 style = "color:rgb(221, 221, 221);">Jack of Many Trades, Master of Some:</h2>
-<!-- jack of many trades, master of some-->
-<div>
-  <p>I am fluent in HTML, CSS, JavaScript, Markdown/Latex, Python, Java, and C#. I am knowledgeable about Haskell, Scheme, Prolog, C++, and MatLab. <br>
-    In terms of operating systems, I have worked extensively with Linux, Mac, and Windows. I have also utilized Agile Methodologies during my time working.<br>
-    I have two Carnegie Hall Royal Conservatory Level 10 Certificates (Violin and Oboe). I played varsity tennis and went to State. I am an Eagle Scout.
-  </p>
-</div>
-
-<hr>
-<h2 style = "color:rgb(221, 221, 221);">:</h2>
-<div>
-    <p>
-    Back when I was a Biomedical Engineer, my first ever coding project was a very basic Matlab music player that I wrote with Heather Hoden. It looked exactly
-    like the music players that the very first programmers had ever created, meaning that we were stepping along the paths of greats. I would end up switching to 
-    Computer Science while Heather would switch to Physics (RIP HH's coding future).
-  </p>
-  <p>
-     In EECS 391, I wrote a 2x2 Rubik's Cube solver that found the fastest way to solve using both A star and beam search. If you need help solving a 2x2 Rubik's Cube, 
-      my program will gladly help you out. Anything more than that and my program will probably combust. 
-    </p>
-  <p>At HACKCWRU V, Sibi Sengottuvvel, Rahul Pokharna, Alexander Telich, and I collaborated to write a Chrome extension that would translate
-    various images to speech using the Google Vision API. Sleep deprivation and playing Fortnite prevented us from taking an actual picture together, 
-    but we did win the Maker Award as a nice consolation prize. 
-  </p>
-    <p>
-      I am now currently working on 2 projects. One is this website itself and the other is my 2D Dino Platformer game. 
-    </p>
-</div>
-
-<div>
-  <h2 style = "color:rgb(221, 221, 221);">What I Do:</h2>
-    <ul>
-        <li>Coder, video editer, music maker</li>
-      <li>Teamwork is dreamwork.</li>  
-      <li>Basketball/Tennis/Any sport with a net really.</li> 
-      <li>Videogame player, Videogame maker. </li> 
-    </ul>
-</div>
-
-<div>
-  <h2 style = "color:rgb(221, 221, 221);">(What I Want) To Do:</h2>
-    <ul>
-      <li>Learn (via Google).</li>  
-      <li>Lead (via groupwork).</li> 
-      <li>Laugh (via good jokes).</li> 
-    </ul>
-</div>
-
-<div>
-  <h2 style = "color:rgb(221, 221, 221);">Courses Taken:</h2>
-    <ul>
-      <li>Data Structures</li>  
-      <li>Programming Language Concepts (Functional and OOP)</li> 
-      <li>Algorithms</li> 
-      <li>Intro to Operating Systems</li> 
-      <li>Probabilistic Graphical Models</li> 
-      <li>Software Engineering</li>
-    </ul>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i>ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    </a>
   </div>
 
-<hr>
-<div>
-  <h2 style = "color:rgb(221, 221, 221);">General Info</h2>
-  <p><i class="fa fa-envelope-o"></i>   isaacng97@yahoo.com</p>
-  <p><i class="fa fa-file-pdf-o"></i> <a href = "Resume.pdf" target = "_blank">Resume</a></p>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
 </div>
-<!-- think about combining all of them into one picture and producing picture map, make list
-<div id="centeredmenu">
-  <ul>
-    <li>
-      <a href = "https://github.com/byrrice" target = "_blank">
-        <img src = "github.png" alt = "github" style = "width:60px;height:60; border-radius:50%;">
-      </a>
-    </li>
-    <li>
-      <a href = "https://www.linkedin.com/in/isaacng97/" target = "_blank">
-        <img src = "linkedin.png" alt = "linkedin" style = "width:60px;height:60;border-radius:50%;">
-      </a>
-    </li>
-  </ul>
-</div>
-<hr>
-<p  style = "padding: 20px; background-color:lightcoral; border:2px solid Violet;">haha</p>
--->
-</body>
 
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+  <center><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Isaac Ng:</span><br><br>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">All <span class="w3-hide-small">Purpose</span> Tinkerer<i class = "fa fa-wrench"></i></span>
+  </div>
+</div>
+
+<!-- About Section-->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">My name is Isaac.</h3>
+  <p class="w3-center"><em>Jack of Many Trades, Master of Some</em></p>
+
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <!-- <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br> -->
+      <img src="isaac.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="270" rotate="70">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p>
+            I'm currently a 21 year old BS Computer Science Major attending Case Western Reserve University (click <a href = "https://en.wikipedia.org/wiki/Case_Western_Reserve_University" target = "_blank">here</a>).
+            I love solving problems utilizing neat, inventive solutions and am always striving to explore more interesting topics along the way!
+            <li>Coder, video editer, music maker</li>
+            <li>Basketball/Tennis/Any sport with a net really</li> 
+            <li>Avid videogame player and videogame maker</li>
+        </p>
+        <p>
+            I am fluent in HTML, CSS, JavaScript, Markdown/Latex, Python, Java, and C#. I am knowledgeable about Haskell, Scheme, Prolog, C++, and MatLab. 
+            In terms of operating systems, I have worked extensively with Linux, Mac, and Windows. I have also utilized Agile Methodologies during my time working.
+            I have two Carnegie Hall Royal Conservatory Level 10 Certificates (Violin and Oboe). I am an Eagle Scout. I played varsity tennis and went to State. 
+        </p>
+    </div>
+  </div>
+  <!-- <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div> -->
+</div>
+
+<!-- <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div> -->
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my coding projects</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <!-- <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="/w3images/p1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>-->
+</div> 
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Chicago, US<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href = " https://www.instagram.com/iyoungng/?hl=en" target = "_blank">
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        </a>
+    <a href = "https://github.com/byrrice" target = "_blank">
+        <i class="fa fa-github w3-hover-opacity"></i>
+      </a>
+    <a href = "https://www.linkedin.com/in/isaacng97/" target = "_blank">
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </a>
+    <a href = "https://byrriceblog.wordpress.com/" target = "_blank">
+        <i class="fa fa-wordpress w3-hover-opacity" ></i>
+      </a>
+  </div>
+  <p>Made with help from <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
 </html>
